@@ -1,0 +1,235 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e8c5;
+    margin: 0;
+    padding: 0;
+    padding-left: 220px; /* Adjust the padding to accommodate the width of the navigation */
+    /* Padding added to the left side to create space for the fixed navigation */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: rgb(0, 57, 78);
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;     /* Distribute items evenly across the header */
+    background-color: #9fe527;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content {
+    flex-grow: 1; /* Allow the header content to grow to fill available space */
+}
+
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust the width as needed */
+    background-color: #333; /* Background color for the navigation menu */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    height: 100vh; /* Make the navigation menu full height */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px; /* Add some space between list items */
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Hover background color */
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#dark_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+#dark-mode-toggle {
+    background-color: #91eca3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #e3af8b;
+}
+
+#dark_choice {
+    font-style: oblique;
+    text-decoration: solid;
+    color: #58d6dd;
+}
+
+#events {
+    text-align: center; /* Center align the images */
+}
+
+#events img {
+    display: inline-block; /* Display images inline */
+    margin: 10px; /* Add margin around images */
+    max-width: 100%; /* Ensure images don't exceed container width */
+    border-radius: 8px; /* Add rounded corners to images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: transform 0.3s ease; /* Add smooth transition on hover */
+}
+
+#events img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+#Core-members img{
+    display: inline-block; /* Display images inline */
+    margin: 10px; /* Add margin around images */
+    max-width: 100%; /* Ensure images don't exceed container width */
+    border-radius: 8px; /* Add rounded corners to images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: transform 0.3s ease; /* Add smooth transition on hover */
+
+}
+
+
+.logo img {
+    height: 100px; /* Adjust the height of the college logo */
+    margin-right: 10px; /* Add spacing between the logos */
+}
+
+.ggc-logo {
+    display: inline-block; /* Ensure the GGC logo appears inline with navigation items */
+    margin-left: 10px; /* Add spacing between the GGC logo and navigation items */
+}
+
+.ggc-logo img {
+    height: 50px; /* Adjust the height of the GGC logo */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column; /* Stack header content vertically on smaller screens */
+        align-items: flex-start; /* Align header content to the start on smaller screens */
+    }
+
+    .logo img {
+        height: 40px; /* Decrease the height of the college logo for smaller screens */
+    }
+
+    .ggc-logo img {
+        height: 40px; /* Decrease the height of the GGC logo for smaller screens */
+    }
+}
+
+
+.box-link {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center; /* Center the content */
+    transition: background-color 0.3s ease; /* Transition effect */
+    position: relative;
+}
+
+.box-link:hover {
+    background-color: #ddd; /* Change color on hover */
+}
+
+.box-link a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.box-link {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7f6adff8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    animation: marquee 1s linear infinite;
+}
+
+/* @keyframes marquee {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+} */
+
+
+
+@keyframes marquee {
+    from {
+        right: 100%;
+    }
+    to {
+        left: 20%;
+    }
+}
+
+
+  
+
+
+  @keyframes blink {
+    0% {
+      opacity: 1; /* Visible */
+    }
+    50% {
+      opacity: 0; /* Hidden */
+    }
+    100% {
+      opacity: 1; /* Visible */
+    }
+  }
+  
+  .blinking {
+    animation: blink 1s infinite; /* Apply the animation infinitely */
+  }
+  

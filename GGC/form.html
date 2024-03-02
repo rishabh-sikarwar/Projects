@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="formlogo.jpeg"   type="image/x-icon">
+    <link rel="stylesheet" href="form.css">
+    <title>Gender Champion Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Gender Champion </h2>
+        <h2>GGC Club Application Form</h2>
+        <form id="application-form"   name="submit-to-google-sheet">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="enrollment">Enrollment Number:</label>
+            <input type="text" id="enrollment" name="enrollment" required><br><br>
+
+            <label for="branch">College Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="">Select</option>
+                <option value="CSE">Computer Science and Engineering (CSE)</option>
+                <option value="CSD">Computer Science and Design (CSD)</option>
+                <option value="ECE">Electronics and Communication Engineering (ECE)</option>
+                <option value="ET">Electronics and telecommunication (ET)</option>
+                <option value="IT">Information Technology (IT)</option>
+                <option value="IT-IOT">Information Technology - Internet of Things (IT-IOT)</option>
+                <option value="IT-AIR">Information Technology - Artificial Intelligence and Robotics (IT-AIR)</option>
+                <option value="AIML">Artificial Intelligence and Machine Learning (AIML)</option>
+                <option value="AIDS">Artificial Intelligence and Data Science (AIDS)</option>
+                <option value="CE">Civil Engineering (CE)</option>
+                <option value="ME">Mechanical Engineering (ME)</option>
+                <option value="EE">Electrical Engineering (EE)</option>
+                <option value="EE-IOT">Electrical Engineering - Internet of Things (EE-IOT)</option>
+                <option value="AU">Automobile Engineering (AU)</option>
+                <option value="CH">Chemical Engineering (CH)</option>
+            </select>
+            <br><br>
+
+            <label for="year">College Year:</label>
+                    <select id="year" name="year" required>
+                        <option value="">Select</option>
+                        <option value="1">1st Year</option>
+                        <option value="2">2nd Year</option>
+                        <option value="3">3rd Year</option>
+                        <option value="4">4th Year</option>
+                    </select><br><br>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="reason">Why do you want to join the GGC club?</label><br>
+            <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Submit"  class="glowing">
+
+            <span id="success"></span>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
+ 
